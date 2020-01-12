@@ -19,24 +19,14 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
     }
     
     @IBAction func signUpButton_Tapped(_ sender: Any) {
-        let auth = Auth.auth()
-        
-        auth.createUser(withEmail: emailField.text!, password: passwordField.text!) { (authResult, error) in
-            if error != nil {
-                self.present(Service.createAlertController(title: "Error", message: error!.localizedDescription), animated: true, completion: nil)
-                return
-            }
-            
+        Service.signUpUser(email: emailField.text!, password: passwordField.text!, name: nameField.text!, onSuccess: {
             self.performSegue(withIdentifier: "userSignedUpSegue", sender: nil)
+        }) { (error) in
+            self.present(Service.createAlertController(title: "Error", message: error!.localizedDescription), animated: true, completion: nil)
         }
-        
-        
     }
-    
-
 }
