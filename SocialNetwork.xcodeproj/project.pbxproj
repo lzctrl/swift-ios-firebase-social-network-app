@@ -620,6 +620,7 @@
 			baseConfigurationReference = 4D761A7BDB3EE3B684AA1C19 /* Pods-SocialNetwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5RGS8B3TZ9;
 				INFOPLIST_FILE = SocialNetwork/Info.plist;
@@ -629,6 +630,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzctrl.SocialNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -639,6 +641,7 @@
 			baseConfigurationReference = 24D1E82A8F075F0AE823FD64 /* Pods-SocialNetwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5RGS8B3TZ9;
 				INFOPLIST_FILE = SocialNetwork/Info.plist;
@@ -648,6 +651,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzctrl.SocialNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -2,7 +2,7 @@
 //  Service.swift
 //  SocialNetwork
 //
-//  Created by Mikhail Lozovyy on 9/30/19.
+//  Created by LzCtrl on 9/30/19.
 //  Copyright © 2019 M & P Construction, Inc. All rights reserved.
 //
 
