@@ -23,6 +23,7 @@ class SignInViewController: UIViewController {
     
     @IBAction func signInButton_Tapped(_ sender: Any) {
         let auth = Auth.auth()
+        let defaults = UserDefaults.standard
         
         auth.signIn(withEmail: emailField.text!, password: passwordField.text!) { (authResult, error) in
             if error != nil {
@@ -30,6 +31,7 @@ class SignInViewController: UIViewController {
                 return
             }
             
+            defaults.set(true, forKey: "isUserSignedIn")
             self.performSegue(withIdentifier: "userSignedInSegue", sender: nil)
         }
         

@@ -15,6 +15,14 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let defaults = UserDefaults.standard
+        
+        Service.getUserInfo(onSuccess: {
+            self.welcomeInLabel.text = "Welcome in \(defaults.string(forKey: "userNameKey")!)"
+        }) { (error) in
+            self.present(Service.createAlertController(title: "Error", message: error!.localizedDescription), animated: true, completion: nil)
+        }
     }
     
     @IBAction func logOutButton_Tapped(_ sender: Any) {

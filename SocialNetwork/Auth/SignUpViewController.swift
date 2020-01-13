@@ -23,7 +23,10 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpButton_Tapped(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        
         Service.signUpUser(email: emailField.text!, password: passwordField.text!, name: nameField.text!, onSuccess: {
+            defaults.set(true, forKey: "isUserSignedIn")
             self.performSegue(withIdentifier: "userSignedUpSegue", sender: nil)
         }) { (error) in
             self.present(Service.createAlertController(title: "Error", message: error!.localizedDescription), animated: true, completion: nil)
