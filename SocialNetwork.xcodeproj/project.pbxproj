@@ -52,6 +52,7 @@
 		5B616163885DBBF653C8C90F /* Pods_SocialNetworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC44DCD2342A776007DB3A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AEC44DCF2342A978007DB3A5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		AED6B09023F7868A00FE90B8 /* App.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = App.storyboard; path = /Users/lzctrl/Desktop/SocialNetwork/SocialNetwork/App.storyboard; sourceTree = "<absolute>"; };
 		AEFB16E7234186FC002E38AA /* SocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFB16EA234186FC002E38AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEFB16EC234186FC002E38AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +167,7 @@
 				AEC44DCC2342A74C007DB3A5 /* User */,
 				AEFB171D23418ADE002E38AA /* Auth */,
 				AEFB16F0234186FC002E38AA /* Main.storyboard */,
+				AED6B09023F7868A00FE90B8 /* App.storyboard */,
 				AEFB16F6234186FF002E38AA /* Assets.xcassets */,
 				AEFB16F8234186FF002E38AA /* LaunchScreen.storyboard */,
 				AEFB172623418F79002E38AA /* GoogleService-Info.plist */,

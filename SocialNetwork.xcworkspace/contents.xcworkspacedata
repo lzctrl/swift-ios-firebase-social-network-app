@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/lzctrl/Desktop/SocialNetwork/SocialNetwork/App.storyboard">
+   </FileRef>
+   <FileRef
       location = "group:SocialNetwork.xcodeproj">
    </FileRef>
    <FileRef

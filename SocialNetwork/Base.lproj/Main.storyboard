@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CeY-In-zMh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CeY-In-zMh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -135,7 +135,7 @@ SocialNetwork</string>
                         <outlet property="emailField" destination="HOm-B6-rW5" id="DhK-Is-M8N"/>
                         <outlet property="passwordField" destination="hnh-G3-SN4" id="h9o-xA-IIs"/>
                         <outlet property="signInButton" destination="G3e-pW-GKU" id="nKU-Fr-IAy"/>
-                        <segue destination="rNQ-Nq-Npo" kind="show" identifier="userSignedInSegue" id="rII-dS-mXw"/>
+                        <segue destination="CtA-L3-46z" kind="show" identifier="userSignedInSegue" id="rII-dS-mXw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYJ-2h-sXv" sceneMemberID="firstResponder"/>
@@ -197,64 +197,20 @@ SocialNetwork</string>
                         <outlet property="nameField" destination="gJe-jR-J5K" id="tYb-Fk-FIe"/>
                         <outlet property="passwordField" destination="MCj-Rq-MZ4" id="n1M-AF-mTB"/>
                         <outlet property="signUpButton" destination="GvS-Iu-GeT" id="slH-Nx-62Z"/>
-                        <segue destination="rNQ-Nq-Npo" kind="show" identifier="userSignedUpSegue" id="Ftx-Bs-bIe"/>
+                        <segue destination="CtA-L3-46z" kind="show" identifier="userSignedUpSegue" id="Ftx-Bs-bIe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APd-La-w4k" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1709" y="487"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="st9-lG-jmJ">
+        <!--welcomeViewID-->
+        <scene sceneID="ahL-Ed-34F">
             <objects>
-                <viewController modalPresentationStyle="overFullScreen" id="6oc-g4-ihQ" customClass="HomeViewController" customModule="SocialNetwork" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tH3-Ra-oBh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome In User" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exO-jW-f11">
-                                <rect key="frame" x="47" y="363" width="321" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
-                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="K1V-as-9dZ"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="HYw-6P-fbb">
-                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="7dV-7A-mE7">
-                            <color key="tintColor" red="0.25098039220000001" green="0.50196078430000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <connections>
-                                <action selector="logOutButton_Tapped:" destination="6oc-g4-ihQ" id="YC7-ka-nsR"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="welcomeInLabel" destination="exO-jW-f11" id="2IN-Qw-Eh5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pc3-2D-BxQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3917.3913043478265" y="168.75"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="MJ8-lD-72o">
-            <objects>
-                <navigationController storyboardIdentifier="welcomeViewID" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="rNQ-Nq-Npo" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="N9A-8q-KBy"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9hf-zm-vvX">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="6oc-g4-ihQ" kind="relationship" relationship="rootViewController" id="bOz-ku-Q4v"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nZK-Xd-2Dl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="welcomeViewID" storyboardName="App" referencedIdentifier="welcomeViewID" id="CtA-L3-46z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fpk-rs-L1i"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2BY-zL-RiL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3010.144927536232" y="168.75"/>
         </scene>
