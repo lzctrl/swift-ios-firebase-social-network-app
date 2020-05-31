@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CeY-In-zMh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CeY-In-zMh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -135,7 +135,7 @@ SocialNetwork</string>
                         <outlet property="emailField" destination="HOm-B6-rW5" id="DhK-Is-M8N"/>
                         <outlet property="passwordField" destination="hnh-G3-SN4" id="h9o-xA-IIs"/>
                         <outlet property="signInButton" destination="G3e-pW-GKU" id="nKU-Fr-IAy"/>
-                        <segue destination="CtA-L3-46z" kind="show" identifier="userSignedInSegue" id="rII-dS-mXw"/>
+                        <segue destination="gBx-bl-CGZ" kind="show" identifier="userSignedInSegue" id="5pg-WP-pln"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYJ-2h-sXv" sceneMemberID="firstResponder"/>
@@ -197,25 +197,70 @@ SocialNetwork</string>
                         <outlet property="nameField" destination="gJe-jR-J5K" id="tYb-Fk-FIe"/>
                         <outlet property="passwordField" destination="MCj-Rq-MZ4" id="n1M-AF-mTB"/>
                         <outlet property="signUpButton" destination="GvS-Iu-GeT" id="slH-Nx-62Z"/>
-                        <segue destination="CtA-L3-46z" kind="show" identifier="userSignedUpSegue" id="Ftx-Bs-bIe"/>
+                        <segue destination="gBx-bl-CGZ" kind="show" identifier="userSignedUpSegue" id="Tnz-8a-5tt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APd-La-w4k" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1709" y="487"/>
         </scene>
-        <!--welcomeViewID-->
-        <scene sceneID="ahL-Ed-34F">
+        <!--Home View Controller-->
+        <scene sceneID="IIf-th-0Qx">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="welcomeViewID" storyboardName="App" referencedIdentifier="welcomeViewID" id="CtA-L3-46z" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="fpk-rs-L1i"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2BY-zL-RiL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController modalPresentationStyle="overFullScreen" id="6L0-NC-E1F" customClass="HomeViewController" customModule="SocialNetwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="49k-Qa-EVq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome In User" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyB-in-K2X">
+                                <rect key="frame" x="47" y="363" width="321" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Zqv-T7-3qj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="act-EC-4sR">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="OzW-ZC-Zay">
+                            <color key="tintColor" red="0.25098039220000001" green="0.50196078430000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="logOutButton_Tapped:" destination="6L0-NC-E1F" id="tIA-IF-j9a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="welcomeInLabel" destination="IyB-in-K2X" id="XL0-9y-U7c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yYZ-4k-IFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3010.144927536232" y="168.75"/>
+            <point key="canvasLocation" x="3933" y="139"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ihG-Hh-syE">
+            <objects>
+                <navigationController storyboardIdentifier="welcomeViewID" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="gBx-bl-CGZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zB1-t7-37l"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="8DQ-IT-ONO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jJX-Kl-a2p">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6L0-NC-E1F" kind="relationship" relationship="rootViewController" id="9NX-dq-19r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jc4-7V-Nvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3023" y="138"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ftx-Bs-bIe"/>
+        <segue reference="5pg-WP-pln"/>
     </inferredMetricsTieBreakers>
 </document>

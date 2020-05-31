@@ -17,6 +17,7 @@ class Service {
         auth.createUser(withEmail: email, password: password) { (authResult, error) in
             if error != nil {
                 onError(error!)
+                return
             }
             
             uploadToDatabase(email: email, name: name, onSuccess: onSuccess)
