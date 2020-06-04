@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5CC51B0BAEAB3C8C81952DCF /* Pods_SocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC7CD09F99ED83CEFCCF199 /* Pods_SocialNetwork.framework */; };
 		A9B18BA3B4758E10FA4A3CA1 /* Pods_SocialNetworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D274A909D51DDA81C921B4 /* Pods_SocialNetworkUITests.framework */; };
+		AE6E13642485E4E500F7E57E /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6E13632485E4E500F7E57E /* ForgotPassViewController.swift */; };
 		AEC44DCE2342A776007DB3A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC44DCD2342A776007DB3A5 /* HomeViewController.swift */; };
 		AEC44DD02342A978007DB3A5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC44DCF2342A978007DB3A5 /* Service.swift */; };
 		AEFB16EB234186FC002E38AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB16EA234186FC002E38AA /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 		3AC7CD09F99ED83CEFCCF199 /* Pods_SocialNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D761A7BDB3EE3B684AA1C19 /* Pods-SocialNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork.debug.xcconfig"; path = "Target Support Files/Pods-SocialNetwork/Pods-SocialNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		5B616163885DBBF653C8C90F /* Pods_SocialNetworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6E13632485E4E500F7E57E /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
 		AEC44DCD2342A776007DB3A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AEC44DCF2342A978007DB3A5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		AEFB16E7234186FC002E38AA /* SocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,16 +165,16 @@
 			children = (
 				AEFB16EA234186FC002E38AA /* AppDelegate.swift */,
 				AEFB16EC234186FC002E38AA /* SceneDelegate.swift */,
+				AEFB16F6234186FF002E38AA /* Assets.xcassets */,
+				AEFB172623418F79002E38AA /* GoogleService-Info.plist */,
+				AEFB16FB234186FF002E38AA /* Info.plist */,
 				AEC44DCC2342A74C007DB3A5 /* User */,
 				AEFB171D23418ADE002E38AA /* Auth */,
 				AEFB16F0234186FC002E38AA /* Main.storyboard */,
-				AEFB16F6234186FF002E38AA /* Assets.xcassets */,
 				AEFB16F8234186FF002E38AA /* LaunchScreen.storyboard */,
-				AEFB172623418F79002E38AA /* GoogleService-Info.plist */,
-				AEFB16FB234186FF002E38AA /* Info.plist */,
-				AEFB16F3234186FC002E38AA /* SocialNetwork.xcdatamodeld */,
 				AEFB172423418B29002E38AA /* Extensions.swift */,
 				AEC44DCF2342A978007DB3A5 /* Service.swift */,
+				AEFB16F3234186FC002E38AA /* SocialNetwork.xcdatamodeld */,
 			);
 			path = SocialNetwork;
 			sourceTree = "<group>";
@@ -201,6 +203,7 @@
 				AEFB171E23418B11002E38AA /* WelcomeViewController.swift */,
 				AEFB172023418B19002E38AA /* SignInViewController.swift */,
 				AEFB172223418B21002E38AA /* SignUpViewController.swift */,
+				AE6E13632485E4E500F7E57E /* ForgotPassViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6E13642485E4E500F7E57E /* ForgotPassViewController.swift in Sources */,
 				AEFB172323418B21002E38AA /* SignUpViewController.swift in Sources */,
 				AEFB171F23418B11002E38AA /* WelcomeViewController.swift in Sources */,
 				AEFB172123418B19002E38AA /* SignInViewController.swift in Sources */,

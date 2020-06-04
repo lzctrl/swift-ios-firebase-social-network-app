@@ -18,7 +18,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     @IBAction func signInButton_Tapped(_ sender: Any) {
@@ -37,5 +37,7 @@ class SignInViewController: UIViewController {
         
     }
     
-
+    @IBAction func forgotPassButton_Tapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "forgotPassSegue", sender: nil)
+    }
 }
