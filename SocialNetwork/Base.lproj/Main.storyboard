@@ -126,16 +126,30 @@ SocialNetwork</string>
                                     <action selector="signInButton_Tapped:" destination="23T-Gl-j1H" eventType="touchUpInside" id="08r-R8-FRr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lld-8h-vmx">
+                                <rect key="frame" x="57" y="375" width="300" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Forgot Password?">
+                                    <color key="titleColor" red="0.25098039215686274" green="0.50196078431372548" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPassButton_Tapped:" destination="23T-Gl-j1H" eventType="touchUpInside" id="tpg-Sj-2OH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.97647058819999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="JhK-hP-7OF"/>
                     </view>
-                    <navigationItem key="navigationItem" id="q5k-wA-RtO"/>
+                    <navigationItem key="navigationItem" id="q5k-wA-RtO">
+                        <barButtonItem key="backBarButtonItem" title=" " id="OAo-nB-MIc"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailField" destination="HOm-B6-rW5" id="DhK-Is-M8N"/>
                         <outlet property="passwordField" destination="hnh-G3-SN4" id="h9o-xA-IIs"/>
                         <outlet property="signInButton" destination="G3e-pW-GKU" id="nKU-Fr-IAy"/>
                         <segue destination="gBx-bl-CGZ" kind="show" identifier="userSignedInSegue" id="5pg-WP-pln"/>
+                        <segue destination="XPS-Dc-VTe" kind="show" identifier="forgotPassSegue" id="3xL-gj-taZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYJ-2h-sXv" sceneMemberID="firstResponder"/>
@@ -258,6 +272,52 @@ SocialNetwork</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jc4-7V-Nvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3023" y="138"/>
+        </scene>
+        <!--Forgot Pass View Controller-->
+        <scene sceneID="3f6-8l-neb">
+            <objects>
+                <viewController id="XPS-Dc-VTe" customClass="ForgotPassViewController" customModule="SocialNetwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KHb-pc-TIH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQN-bV-DPr">
+                                <rect key="frame" x="25" y="88" width="366" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sf-Bj-emu">
+                                <rect key="frame" x="57" y="196" width="300" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nx-SB-Utz">
+                                <rect key="frame" x="57" y="259" width="300" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.50196078430000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPassButton_Tapped:" destination="XPS-Dc-VTe" eventType="touchUpInside" id="Bax-sI-ddM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.97647058819999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="rgQ-c9-Nex"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Tp-vG-bec"/>
+                    <connections>
+                        <outlet property="emailField" destination="4sf-Bj-emu" id="l5r-XA-2Dk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aK4-Mr-9FA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1709" y="-921"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
